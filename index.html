@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+    <!--Inladen speciale pagina's -->
+    <!--Zorgt ervoor dat je speciale tekens kan gebruiken -->
+    <meta charset="UTF-8">
+    <!--Zorgt ervoor je kan scalen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Speciale Icons sectie https://fontawesome.com/icons?d=gallery -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+
+    <!--Opgeven titel pagina -->
+    <title>Tetris Game JS</title>
+
+    <style>
+        #score {
+            display: inline-block;
+        }
+
+        div {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+        }
+        .Game {
+            display: block;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body onload="LaadSpel()">
+    <div>This Game Was Created By <a target="_blank" href="https://www.linkedin.com/in/woutermertensit/">Wouter Mertens</a><br /> With using examples from Code Explained</div><br>
+    <div class="Game">
+        <canvas id="tetris" width="200" height="400"></canvas>
+        <div>Level : <div id="level">1</div></div>
+    </div>
+    <div>
+        Score : <div id="score">0</div>
+                <div><button type="button" onclick="StartSpel()">New Game</button></div>
+    </div>
+    <script src="JS/tetrominoes.js"></script>
+    <script src="JS/tetrisWouter2.js"></script>
+</body>
+</html>
